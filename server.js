@@ -88,7 +88,7 @@ function control(request, response) {
 
   let appDir = options.app;
   if (appDir.indexOf('/') != 0) {
-    appDir = `${__dirname}/${options.app}$`;
+    appDir = `${__dirname}/${options.app}`;
   }
 
   fs.readFile(`${appDir}${url}`, (error, content) => {
